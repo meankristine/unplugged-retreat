@@ -95,6 +95,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  background-color: #202322;
 }
 
 ul,
@@ -111,14 +112,16 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   color: #e2e3ed;
+  font-weight: lighter;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125em;
+  font-size: 1.25em;
   color: #e2e3ed;
-  line-height: 1.125em;
+  line-height: 1.25em;
+  font-weight: lighter;
 }
   
 p {
@@ -139,13 +142,10 @@ address {
 }
 
 .content-wrapper {
-
+  width: 90%;
 }
 
 /* -------------------- Base Header - Footer Styles -------------------- */
-.content-wrapper {
-  width: 90%;
-}
 
 header,
 footer {
@@ -169,6 +169,9 @@ header .content-wrapper {
 
 header .header-divider {
   width: 100%;
+  background-color: #3a3a3a;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -177,6 +180,10 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-align: end;
 }
 
 header nav ul {
@@ -199,6 +206,11 @@ footer h4,
 footer p {
   margin: 0;
   padding: 8px 0;
+  text-align: center;
+}
+
+footer p {
+  padding: 16px 0 20px 0;
 }
 
 footer .social-icons {
@@ -225,6 +237,7 @@ footer .copywright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  /* background-image: url(/img/jake-melara-30679-unsplash.png); */
 }
 
 .hero-area .content-wrapper {
@@ -233,6 +246,7 @@ footer .copywright {
 
 .hero-area h1 {
   margin: 0;
+  color: #e2e3ed;
 }
 
 /* Aside */
@@ -242,10 +256,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 aside .content-wrapper {
-  padding: 50px 18px 45px 18px;
+  padding: 35px 18px 45px 18px;
 }
 
 aside h3, aside p {
@@ -257,6 +272,28 @@ aside input {
   display: flex;
   flex-flow: column wrap;
   margin: 8px 0;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: -webkit-center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -297,6 +334,7 @@ aside input {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews .content-wrapper {
@@ -326,10 +364,11 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .mission .content-wrapper {
-  padding: 50px 18px 0 18px;
+  padding: 35px 18px 40px 18px;
 }
 
 .mission h2, 
@@ -343,10 +382,11 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-section .content-wrapper {
-  padding: 50px 18px 0 18px;
+  padding: 35px 18px 40px 18px;
 }
 
 .contact-section h2, 
@@ -364,14 +404,15 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 18px 45px 18px;
+  padding: 35px 18px 45px 18px;
 }
 
 .faq h2,
@@ -382,10 +423,12 @@ aside input {
 
 .faq h2 {
   padding: 0 0 25px 0;
+  text-align: left;
 }
 
 .faq h3 {
   padding: 25px 0 7px 0;
+  font-size: 1em;
 }
 
 .faq p {
@@ -494,15 +537,21 @@ aside input {
 
   header .content-wrapper {
     width: 100%;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   header nav {
-    width: 20%;
+    width: 30%;
+    display: flex;
+  }
+
+  header nav ul {
+    padding-left: 650px;
   }
 
   header nav ul li {
     justify-content: space-between;
+    padding-left: 50px;
   }
 
   .header-divider {
@@ -527,7 +576,6 @@ aside input {
 
   /* Homepage - Aside */
   aside .content-wrapper {
-    margin: 50px 0;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -536,6 +584,16 @@ aside input {
   aside .form-description,
   aside .form {
     width: 40%;
+  }
+
+  input[type=text] {
+    padding: .5em;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
   }
 
   /* Homepage - Features */
@@ -605,6 +663,10 @@ aside input {
   /* Base Styles */
   .content-wrapper {
     max-width: 960px;
+  }
+
+  header nav ul {
+    padding-left: 950px;
   }
 
   /* Homepage - Hero Area */
