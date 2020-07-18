@@ -87,10 +87,64 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* -------------------- Base Header - Footer Styles -------------------- */
+/* -------------------- General Styles -------------------- */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  color: #e2e3ed;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  line-height: 1.125em;
+}
+  
+p {
+  color: #e2e3ed;
+  line-height: 1.125em;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+}
 
 .content-wrapper {
-  width: 100%;
+
+}
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+.content-wrapper {
+  width: 90%;
 }
 
 header,
@@ -130,6 +184,10 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
   margin: 0;
+}
+
+footer {
+  flex-direction: column;
 }
 
 footer .content-wrapper {
@@ -193,6 +251,12 @@ aside .content-wrapper {
 aside h3, aside p {
   margin: 0;
   padding: 6px 0;
+}
+
+aside input {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 8px 0;
 }
 
 /* Features */
@@ -472,10 +536,6 @@ aside h3, aside p {
   aside .form-description,
   aside .form {
     width: 40%;
-  }
-
-  aside input {
-    margin: 8px 0;
   }
 
   /* Homepage - Features */
